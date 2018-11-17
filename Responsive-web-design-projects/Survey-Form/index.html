@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+      <header>
+        <div class = "card text-center border-light" id = "title-card">
+          <div class = "card-header bg-secondary">
+            <h1 id = "title">Survey Form</h1>
+          </div>
+          <div class = "card-body">
+            <p class = "card-text" id = "description">Tell us about your interest in the diverse field of 3D Arts!</p> 
+          </div>
+        </div>   
+      </header>
+      
+      <div class = "container">
+
+          <form id = "survey-form" class = "form-horizontal">
+            <div class = "card border-primary" id = "contact-card">
+              <div class = "card-header bg-primary">
+                <h3>Contact Info</h3>
+              </div>
+              <div class = "card-body">                   
+                <div class="form-group row">
+                  <label for="name" id = "name-label" class="col-sm-2 control-label my-auto">* Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                  </div>
+                </div>            
+                <div class="form-group row">
+                  <label for="email" id = "email-label" class="col-sm-2 control-label my-auto">* Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email Address" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="number" id = "number-label" class="col-sm-2 control-label my-auto">Phone Number</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="number" min = 10 max = 11 pattern="\d+" placeholder="Enter Your Phone Number">
+                    <small id="phonehelper" class="text-muted">enter only numbers &amp include area code</small>
+
+                  </div>
+
+                </div>
+                <div class = "form-group row">
+                  <div class = "col-sm-2">
+                    <p class = "col-form-label my-auto">This is Your</p>
+                  </div>
+                  <div class = "col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Cell</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Home</label>
+                    </div>                          
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class = "card border-primary" id = "questions-card">
+              <div class = "card-header bg-primary">
+                <h3>Questions</h3>
+              </div>
+              <div class = "card-body">
+                <div class = "form-group row">
+                  <label for = "dropdown" id = "dropdown-label" class = "col-sm-2 my-auto">How Did You Hear About Us?</label>
+                  <div class = "col-sm-10">
+                    <select id = "dropdown" class = "form-control">
+                      <option selected>Choose...</option>
+                      <option>CGMeetup</option>
+                      <option>Creative Crash</option>
+                      <option>It's Art Magazine</option>
+                    </select>
+                  </div>
+                </div>
+                
+                  <fieldset class = "form-group">
+                    <div class = "row">
+                      <legend class = "col-form-label col-sm-2 pt-0">Area(s) of Interest</legend>
+                      <div class = "col-sm-10">
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "conceptart" id = "conceptart" value ="option1">
+                          <label class = "form-check-label" for = "conceptart">Concept Art &amp Design</label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "animation" id = "animation" value = "option2">
+                          <label class = "form-check-label" for = "animation">Animation</label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "mocap" id = "mocap" value = "option3">
+                          <label class = "form-check-label" for = "mocap">Motion Capture</label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "character" id = "character" value = "option4">
+                          <label class = "form-check-label" for = "character">Character Modeling &amp Sculpting</label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "environmental" id = "environmental" value = "option5">
+                          <label class = "form-check-label" for = "environmental">Environmental / Prop Modeling</label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "checkbox" name = "vfx" id = "vfx" value = "option6">
+                          <label class = "form-check-label" for = "vfx">Visual Effects</label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class = "form-group">
+                    <div class = "row">
+                      <legend class = "col-form-label col-sm-2 pt-0">Recieve Updates About Us?</legend>
+                      <div class = "col-sm-10">
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "radio" name = "getupdates" id = "getupdates1" value = "option1" checked>
+                          <label class = "form-check-label" for = "gridRadios1">
+                            Yes Please!
+                          </label>
+                        </div>
+                        <div class = "form-check">
+                          <input class = "form-check-input" type = "radio" name = "getupdates" id = "getupdates2" value = "option2">
+                          <label class = "form-check-label" for = "gridRadios2">
+                           No Thank You.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                <div class = "form-group row">
+                  <label class = "col-sm-2">
+                    Additional Comments
+                  </label>
+                  <textarea rows = "4" cols = "80" name = "comment" form = "survey-form">Enter text here...</textarea>
+                </div>                
+              </div>
+            </div>
+            
+            <div class = "form-group row">
+               <div class = "col-sm-2">
+                <button type = "submit" id = "submit" class = "btn btn-primary btn-lg">Submit</button>
+              </div>
+               <div class = "col-sm-2">
+                <button type = "reset" id = "reset" class = "btn btn-secondary btn-lg">Reset</button>
+              </div>             
+            </div>
+          </form>
+      </div>
+      <footer>
+        
+      </footer>
+
+    
+
+  
+  
+
+</body>
+
+</html>
